@@ -12,5 +12,5 @@ m: METAD ...
   BIASFACTOR=8
   PACE=500
   GRID_MIN=-pi
-  GRID_MAX=+pi
+  GRID_MAX=pi
 ...

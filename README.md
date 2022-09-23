@@ -302,7 +302,7 @@ m: METAD ...
   BIASFACTOR=__FILL__
   PACE=__FILL__
   GRID_MIN=-pi
-  GRID_MAX=+pi
+  GRID_MAX=pi
 ...
 ```
 
@@ -378,7 +378,7 @@ m: METAD ...
   BIASFACTOR=__FILL__
   PACE=__FILL__
   GRID_MIN=-pi
-  GRID_MAX=+pi
+  GRID_MAX=pi
 ...
 ```
 
