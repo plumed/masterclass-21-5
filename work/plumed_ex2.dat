@@ -1,0 +1,19 @@
+# vim:ft=plumed
+MOLINFO STRUCTURE=../reference.pdb
+
+# this is needed to allow arbitrary pairs to try exchanges
+# in this case, 0<->1, 0<->2, and 1<->2
+RANDOM_EXCHANGES
+
+phi: TORSION ATOMS=@phi-2
+psi: TORSION ATOMS=@psi-2
+# You can use the same parameters that you used in masterclass 21.4
+m: METAD ...
+  ARG=@replicas:phi,psi,phi
+  SIGMA=0.3
+  HEIGHT=@replicas:1.2,1.2,0.0 # make sure that there is no bias on the third replica!
+  BIASFACTOR=8
+  PACE=500
+  GRID_MIN=-pi
+  GRID_MAX=+pi
+...

@@ -1,0 +1,16 @@
+MOLINFO STRUCTURE=../reference.pdb
+phi: TORSION ATOMS=@phi-2
+psi: TORSION ATOMS=@psi-2
+# You can use the same parameters that you used in masterclass 21.4
+# However, it is recommended to scale HEIGHT with temperature.
+# You can do it either using replicas: syntax in HEIGHT or specifying TAU
+# instead of HEIGHT
+m: METAD ...
+  ARG=psi
+  SIGMA=0.3
+  HEIGHT=1.2
+  BIASFACTOR=8
+  PACE=500
+  GRID_MIN=-pi
+  GRID_MAX=+pi
+...

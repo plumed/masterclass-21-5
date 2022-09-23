@@ -1,0 +1,6 @@
+# vim:ft=plumed
+MOLINFO STRUCTURE=../reference.pdb
+phi: TORSION ATOMS=@phi-2
+psi: TORSION ATOMS=@psi-2 
+bb: RESTRAINT ARG=phi KAPPA=200.0 AT=@replicas:-3.14,-2.94,-2.75
+PRINT ARG=phi,psi,bb.bias FILE=../colvar_multi.dat STRIDE=100
