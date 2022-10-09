@@ -11,7 +11,7 @@ The flow chart shown below indicates the order in which you should consult the r
 This lesson was the fifth masterclass in the 2021 series.  You are strongly recommended to complete the masterclasses on umbrella sampling and metadynamics that are indicated in the flow chart below before tackling this masterclass. 
 
 ```mermaid
-flowchart LR;
+flowchart TB;
   A[Umbrella sampling] ==> C[Lecture I] 
   B[Metadynamics] --> C
   C ==> D[Instructions];
